@@ -1,27 +1,24 @@
 package com.java.learning.functional;
 
-public class TwoDArray {
-    public void printArray(int [][] array) {
-        for (int[] anArray : array) {
-            for (int anAnArray : anArray) {
+import java.util.Scanner;
+
+public class TwoDArray<T> {
+    public void printArray(T [][] array) {
+        for (T[] anArray : array) {
+            for (T anAnArray : anArray) {
                 System.out.println(anAnArray);
             }
         }
     }
 
-    public void printArray(double [][] array) {
-        for (double[] anArray : array) {
-            for (double anAnArray : anArray) {
-                System.out.println(anAnArray);
-            }
-        }
-    }
+    public void populate2DArray() {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter the number of rows");
+        int rows = scan.nextInt();
+        System.out.println("Enter the number of columns");
+        int cols = scan.nextInt();
+        System.out.println("Enter Elements of this array");
+        Scanner inputArrayScan = new Scanner(System.in);
 
-    public void printArray(Boolean [][] array) {
-        for (Boolean[] anArray : array) {
-            for (Boolean anAnArray : anArray) {
-                System.out.println(anAnArray);
-            }
-        }
     }
 }
