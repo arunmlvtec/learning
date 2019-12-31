@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class AddsToZero {
-    public void printNumsThatAddsToZero(int[] inputArray) {
+    private void printNumsThatAddsToZero(int[] inputArray) {
         List<ArrayList<Integer>> distinctPairs = new ArrayList<>();
         int totalPairs = 0;
         for(int i = 0; i < inputArray.length; i++) {
@@ -31,6 +31,7 @@ public class AddsToZero {
     public static void main(String[] args) {
         AddsToZero addsToZero = new AddsToZero();
         Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the number of elements: ");
         int arrayLength = scanner.nextInt();
         int[] inputArray = new int[arrayLength];
         for (int i = 0; i < arrayLength; i++) {
