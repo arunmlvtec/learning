@@ -2,6 +2,13 @@ package com.java.learning.functional;
 
 import java.util.Scanner;
 
+/**
+ * Write a program Distance.java that takes two integer command-line arguments x
+ * and y and prints the Euclidean distance from the point (x, y) to the origin (0, 0). The
+ * formulae to calculate distance = sqrt(x*x + y*y). Use Math.power function
+ * @author Arun
+ *
+ */
 public class Distance {
     void printDistance(int x, int y) {
         System.out.println(Math.pow(((x*x) + (y*y)), 0.5));
