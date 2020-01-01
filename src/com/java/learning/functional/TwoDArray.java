@@ -1,14 +1,16 @@
 package com.java.learning.functional;
 
+import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class TwoDArray<T> {
     public void printArray(T [][] array) {
+        PrintWriter pw = new PrintWriter(System.out, true);
         for (T[] anArray : array) {
             for (T anAnArray : anArray) {
-                System.out.print(anAnArray+"\t");
+                pw.print(anAnArray+"\t");
             }
-            System.out.println();
+            pw.println();
         }
     }
 
