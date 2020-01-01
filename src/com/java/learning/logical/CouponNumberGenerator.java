@@ -29,6 +29,7 @@ public class CouponNumberGenerator {
         System.out.println("Total Attempts needed to generate "+countCouponNumbers+", is: "+ totalAttempts);
     }
 
+    // long return type is there to consider if countCouponNumbers is given as Integer's range.
     static long generateCouponNumbers(int countCouponNumbers) {
         Set<Integer> distinctCouponNumbers = new HashSet<>();
         Random random = new Random();
